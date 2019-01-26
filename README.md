@@ -16,7 +16,7 @@ root
 |  ├─ wp-content
 |  |  ├─ plugins
 |  |  └─ themes
-|  |     └─ dftheme   # dftheme theme directory
+|  |     └─ themrish   # themrish theme directory
 │  ├─ ... 
 |  └─ ...
 ├─ .git
@@ -43,17 +43,17 @@ root
 ### 1."[Local by Flywheel](https://local.getflywheel.com/)"によるWordPressのインストール
 
 ### 2.リポジトリクローン
-``` git clone https://github.com/design-front/dftheme ```
+``` git clone git@github.com:yat8823jp/themrishv2.git ```
 
 ### 3.クローンしたファイルの移動
 
-``` dftheme ``` ディレクトリに入っている
+``` themrish ``` ディレクトリに入っている
 
 - .git
 - .gitignore
 - README.md
 
-を ```public``` と同一階層に移動（ディレクトリ構成と同じにする）し、``` dftheme ``` ディレクトリを削除
+を ```public``` と同一階層に移動（ディレクトリ構成と同じにする）し、``` themrish ``` ディレクトリを削除
 
 ### 4.composerの実行
 
@@ -62,7 +62,7 @@ root
 ### 5.npm の実行
 
 テーマ用ディレクトリに移動
-``` cd public/wp-content/themes/dftheme/ ```
+``` cd public/wp-content/themes/themrish/ ```
 
 ``` npm install ```
 
