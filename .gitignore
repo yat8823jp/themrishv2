@@ -22,6 +22,6 @@ htdocs/
 
 !/*/wp-content/plugins/
 /*/wp-content/plugins/*
-#!/*/wp-content/plugins/sample/
+!/*/wp-content/plugins/sample/
 
 #default file
