@@ -1,0 +1,20 @@
+@mixin beforeafter {
+	content: "";
+	display: block;
+}
+
+@mixin elmhidden {
+	text-indent: -10000px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin clearfix {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+@mixin opacity( $opacity, $color01:#000 ) {
+	background-color: rgba( $color01, $opacity );
+}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import "foundation/_base";
+@import "foundation/normalize";
+@import "foundation/*";
+
+
+body {
+	.sticky,
+	.gallery-caption,
+	.bypostauthor {
+		display: block;
+	}
+}
+
+.content {
+}

@@ -1,0 +1,40 @@
+{
+"name": "dftheme",
+"authors": [
+{
+"name": "YAT",
+"email": "yat@yat-net.com"
+}
+],
+"repositories":[
+{
+"type": "composer",
+"url": "https://wpackagist.org"
+},
+{
+"type": "composer",
+"url": "https://wp-languages.github.io"
+}
+],
+"require": {
+"wpackagist-plugin/wp-multibyte-patch": ">=2.8.2",
+"wpackagist-plugin/mw-wp-form": ">=4.0.6",
+"koodimonni-language/core-ja": "*"
+},
+"autoload": {
+"psr-0": {
+"Acme": "src/"
+}
+},
+"extra": {
+"installer-paths": {
+"public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+},
+"dropin-paths": {
+"public/wp-content/languages/": ["vendor:koodimonni-language"],
+"public/wp-content/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+"public/wp-content/languages/themes/": ["vendor:koodimonni-theme-language"]
+},
+"wordpress-install-dir": "public"
+}
+}

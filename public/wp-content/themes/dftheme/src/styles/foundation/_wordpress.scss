@@ -1,0 +1,361 @@
+p {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+h3 {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+h4 {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+h5 {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+h6 {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+hr {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+dl {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+
+	dt {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+	dd {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+}
+ul {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+	li {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+}
+
+ol {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+	li {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+}
+
+blockquote {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+img {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+code {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+table {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+	thead {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+		tr {
+			@include breakpoint( tablet ) {
+			}
+			@include breakpoint( pc ) {
+			}
+			@include breakpoint( wide ) {
+			}
+			th {
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+				}
+				@include breakpoint( wide ) {
+				}
+			}
+		}
+	}
+	tbody {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+		tr {
+			@include breakpoint( tablet ) {
+			}
+			@include breakpoint( pc ) {
+			}
+			@include breakpoint( wide ) {
+			}
+			th {
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+				}
+				@include breakpoint( wide ) {
+				}
+			}
+			td {
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+				}
+				@include breakpoint( wide ) {
+				}
+			}
+		}
+	}
+}
+pre {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+iframe {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+a {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+	&:link, &:visited {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+	&:hover, &:active {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+}
+.alignleft {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+.aligncenter {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+.alignright {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+.menu {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+	li {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+}
+
+
+.wp-caption {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+.sticky {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+.gallery {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+.bypostauthor {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}
+
+.screen-reader-text:focus {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+
+}
+
+#wpadminbar {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}

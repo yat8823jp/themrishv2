@@ -1,0 +1,26 @@
+.u-align {
+	&--left {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+	&--center {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+	&--right {
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+}
