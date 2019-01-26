@@ -1,0 +1,8 @@
+.p-contents {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}

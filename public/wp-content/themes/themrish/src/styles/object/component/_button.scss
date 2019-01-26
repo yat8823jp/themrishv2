@@ -1,0 +1,8 @@
+.c-button {
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}

@@ -1,0 +1,70 @@
+:root {
+	font-size: 10px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-width: 375px;
+	width: 100%;
+	min-height: 100%;
+	height: 100%;
+	font-size: 1.4rem;
+	overflow-x: hidden;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+li, dl, dd {
+	list-style-type: none;
+	margin         : 0;
+	padding        : 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+// mixin
+@mixin breakpoint( $point ) {
+	@if $point == tablet {
+		@media ( min-width: 641px ) {
+			@content ;
+		}
+	}
+	@if $point == pc {
+		@media ( min-width: 769px ) {
+			@content ;
+		}
+	}
+	@if $point == wide {
+		@media ( min-width: 961px ) {
+			@content ;
+		}
+	}
+}
