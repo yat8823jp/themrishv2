@@ -1,11 +1,11 @@
-# themrish v2
+# themrish v2.1
 
 for WordPress theme develop auxiliary tool
 
 WordPressのテーマ開発補助ツールです。
 
 ブラウザシンクによるソースファイル保存時のページリロード
-sassコンパイラ
+sassコンパイラ ( dart-sass )
 jsコンパイラ
 
 ## ディレクトリ構成
@@ -29,15 +29,15 @@ root
 - WordPress 5.0.3 以上
 - [Local](https://local.getflywheel.com/) by Flywheel もしくはその他開発環境（PHP, MySQL）
 - [composer](https://getcomposer.org/) 1.8.0 以上
-- Node v10.15.0 以上
+- Node v14.17.5 以上
 
 ## 依存アプリケーション
 
-- node.js version: 10.15.0 later
-- npm version: 6.7.0 later
-- gulp version: 4.0.0 later
+- node.js version: 14.17.5 later
+- npm version: 6.14.14 later
+- gulp version: 4.0.2 later
 - babel babel2015
-- browsersync version: 2.26.3
+- browsersync version: 2.27.5
 
 ## 使い方
 ### 1."[Local by Flywheel](https://local.getflywheel.com/)"によるWordPressのインストール
@@ -70,7 +70,21 @@ root
 
 ``` npx gulp ```
 
+## sass
+
+- [Dart Sass](https://www.npmjs.com/package/sass) を採用
+- sass のインポートには @import ではなく @use 及び @forward を利用してください
+- [gulp-sass-glob-use-forward](https://www.npmjs.com/package/gulp-sass-glob) を利用しているのでディレクトリ以下のファイルを読み込み可能
+- スマホファーストを採用。mixin には tablet 600px~ と PC 1025px~ を採用
+
+## スタイルガイド
+
+- [Fractal ](https://www.npmjs.com/package/@frctl/fractal) を採用
+- 定義ファイルは ` /src/styleguide/ ` に書いてください
+- ` npx gulp styleguide ` にてビルドされます
+
 ## version
 
+- 2.0.1 release
 - 2.0.0 release
 

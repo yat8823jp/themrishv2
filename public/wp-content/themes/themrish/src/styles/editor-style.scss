@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-@import "foundation/_base";
-@import "foundation/normalize";
-@import "foundation/*";
+@forward "foundation/base";
+@forward "foundation/*";
+
 
 
 body {
@@ -11,7 +11,4 @@ body {
 	.bypostauthor {
 		display: block;
 	}
-}
-
-.content {
 }

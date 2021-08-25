@@ -1,3 +1,3 @@
 jQuery( function( $ ) {
-	var config = require( './config.js' );
+	const config = require( './config.js' );
 } );

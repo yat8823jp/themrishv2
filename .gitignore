@@ -1,6 +1,7 @@
 #.gitignore
 .htaccess
 .editorconfig
+.node-version
 node_modules/
 style.css
 style.css.map

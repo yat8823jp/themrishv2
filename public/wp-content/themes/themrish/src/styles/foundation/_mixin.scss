@@ -1,20 +1,13 @@
-@mixin beforeafter {
-	content: "";
-	display: block;
-}
-
-@mixin elmhidden {
-	text-indent: -10000px;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-@mixin clearfix {
-	content: "";
-	clear: both;
-	display: block;
-}
-
-@mixin opacity( $opacity, $color01:#000 ) {
-	background-color: rgba( $color01, $opacity );
+// Break point
+@mixin breakpoint( $point ) {
+    @if $point == tablet {
+        @media ( min-width: 600px ) {
+            @content ;
+        }
+    }
+    @if $point == pc {
+        @media ( min-width: 1025px ) {
+            @content ;
+        }
+    }
 }

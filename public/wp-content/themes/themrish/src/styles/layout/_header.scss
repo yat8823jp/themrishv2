@@ -1,8 +1,9 @@
+@use "foundation/mixin";
+@use "foundation/variable";
+
 .l-header {
-	@include breakpoint( tablet ) {
+	@include mixin.breakpoint ( tablet ) {
 	}
-	@include breakpoint( pc ) {
-	}
-	@include breakpoint( wide ) {
+	@include mixin.breakpoint ( pc ) {
 	}
 }
