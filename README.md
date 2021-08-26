@@ -85,6 +85,6 @@ root
 
 ## version
 
-- 2.0.1 release
+- 2.1.0 release
 - 2.0.0 release
 
