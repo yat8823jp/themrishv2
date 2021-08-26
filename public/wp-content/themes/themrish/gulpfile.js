@@ -12,7 +12,7 @@ const gulp           = require( 'gulp' ),
 	plumber          = require( 'gulp-plumber' ),//エラー通知
 	notify           = require( 'gulp-notify' ),//エラー通知
 	pleeease         = require( 'gulp-pleeease' ),//ベンダープレフィックス
-	vinyl_source           = require( 'vinyl-source-stream' ),
+	vinyl_source     = require( 'vinyl-source-stream' ),
 	buffer           = require( 'vinyl-buffer' ),
 	browserify       = require( 'browserify' ),
 	babelify         = require( 'babelify' ),
@@ -45,7 +45,7 @@ const gulp           = require( 'gulp' ),
 	const options = minimist( process.argv.slice( 2 ), {
 		string: 'path',
 		default: {
-			path: 'abiko.local' // 引数の初期値
+			path: 'themrish.local' // 引数の初期値
 		}
 	});
 
@@ -62,11 +62,7 @@ gulp.task( 'sass', function( done ) {
 	gulp.src( './src/styles/**/*.scss' )
 		.pipe( sassGlob() )
 		.pipe( sass.sync().on( 'error', sass.logError ) )
-		// .pipe( plumber ( {
-		// 	errorHandler: notify.onError( 'Error: <%= error.message %>' )
-		// } ) )
 		.pipe( sourcemaps.init() )
-		// .pipe( bulkSass() )
 		.pipe( sass( {
 			outputStyle: 'expanded',
 			minifier: true //圧縮の有無 true/false
