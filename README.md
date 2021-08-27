@@ -85,6 +85,7 @@ root
 
 ## version
 
-- 2.1.0 release
+- 2.1.1 release style.css を css/main.css に変更
+- 2.1.0 release Dart Sass 対応, スタイルガイド Fractal 対応
 - 2.0.0 release
 
