@@ -3,12 +3,12 @@
 .editorconfig
 .node-version
 node_modules/
-style.css
-style.css.map
+main.css
 editor-style.css
 editor-style.css.map
 bundle.js
 package-lock.json
+*.map
 
 /*/*
 !/*/wp-content/
@@ -16,6 +16,7 @@ package-lock.json
 !/*/wp-content/themes/
 /*/wp-content/themes/*
 !/*/wp-content/themes/themrish/
+!/wp-content/themes/themrish/style.css
 htdocs/
 
 
