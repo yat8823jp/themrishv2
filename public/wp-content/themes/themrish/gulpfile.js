@@ -45,7 +45,7 @@ const gulp           = require( 'gulp' ),
 	const options = minimist( process.argv.slice( 2 ), {
 		string: 'path',
 		default: {
-			path: 'themrish.local' // 引数の初期値
+			path: 'abiko.local' // 引数の初期値
 		}
 	});
 
@@ -77,8 +77,7 @@ gulp.task( 'sass', function( done ) {
 			sass: true
 		} ) )
 		.pipe( sourcemaps.write( './' ) )
-		.pipe( gulp.dest( './' ) )
-		.pipe( gulp.dest( './' ) );
+		.pipe( gulp.dest( './css' ) );
 	done();
 });
 
@@ -108,6 +107,7 @@ gulp.task( 'styleguide', function() {
 /*
  * JavaScript
  */
+
 gulp.task( 'browserify', function ( done ) {
 	const option = {
 		bundleOption: {

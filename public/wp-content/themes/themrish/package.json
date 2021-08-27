@@ -26,8 +26,7 @@
     "Android >= 4"
   ],
   "license": "MIT",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "private": true,
   "dependencies": {
     "@babel/core": "^7.15.0",
