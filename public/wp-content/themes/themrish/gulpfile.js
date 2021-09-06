@@ -108,6 +108,12 @@ gulp.task( 'styleguide', function() {
  * JavaScript
  */
 
+function errorAlert( error ) {
+	notify.onError( { title: "Error", message: "Check your terminal", sound: "Funk" } )( error ); //Error Notification
+	console.log( error.toString() );//Prints Error to Console
+	this.emit( "end" ); //End function
+};
+
 gulp.task( 'browserify', function ( done ) {
 	const option = {
 		bundleOption: {
@@ -126,19 +132,17 @@ gulp.task( 'browserify', function ( done ) {
 		} ) )
 		.transform( browserifyShim );
 		bundle = function () {
-		b.bundle()
-			.pipe( plumber ( {
-				errorHandler: notify.onError( 'Error: <%= error.message %>' )
-			} ) )
+			b.bundle()
+			.pipe( plumber( { errorHandler: errorAlert } ) )
 			.pipe( vinyl_source ( option.filename ) )
 			.pipe( gulp.dest ( option.dest ) );
-	};
+		};
 	if ( global.isWatching ) {
-		var bundler = watchify( b );
+		const bundler = watchify( b );
 		bundler.on( 'update', bundle );
 	}
 	done();
-	return bundle();
+	return bundle;
 });
 
 /*
