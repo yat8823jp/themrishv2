@@ -31,6 +31,7 @@ const gulp           = require( 'gulp' ),
 	util             = require( 'gulp-util' ),
 	path             = require( 'path' ), //path
 	minimist         = require( 'minimist' ),
+	cached           = require('gulp-cached'),
 	fractal          = require( '@frctl/fractal' ).create();
 
 	const paths = {
@@ -62,6 +63,7 @@ gulp.task( 'sass', function( done ) {
 	gulp.src( './src/styles/**/*.scss' )
 		.pipe( sassGlob() )
 		.pipe( sass.sync().on( 'error', sass.logError ) )
+		.pipe( cached( 'scss' ) )
 		.pipe( sourcemaps.init() )
 		.pipe( sass( {
 			outputStyle: 'expanded',
