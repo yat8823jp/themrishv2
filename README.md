@@ -17,11 +17,11 @@ root
 |  |  ├─ plugins
 |  |  └─ themes
 |  |     └─ themrish   # themrish theme directory
-│  ├─ ... 
+│  ├─ ...
 |  └─ ...
 ├─ .git
 ├─ .gitignore
-└─ README.md 
+└─ README.md
 ```
 
 ## 必要な環境
@@ -85,6 +85,7 @@ root
 
 ## version
 
+- 2.2.0 release Scss Cache を追加
 - 2.1.1 release style.css を css/main.css に変更
 - 2.1.0 release Dart Sass 対応, スタイルガイド Fractal 対応
 - 2.0.0 release
